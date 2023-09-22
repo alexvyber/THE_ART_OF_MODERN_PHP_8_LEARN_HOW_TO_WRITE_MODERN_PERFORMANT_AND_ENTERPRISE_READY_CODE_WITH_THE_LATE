@@ -6,7 +6,7 @@ namespace Book\Part1\Chapter2;
 
 class MyParentClass
 {
-    protected int  $foo     = 1;
+    protected int  $foo     = 1 + 122;
     private string $private = 'hidden';
 }
 
@@ -33,3 +33,7 @@ class MyChildClass extends MyParentClass
         return 'NOT POSSIBLE';
     }
 }
+
+$inst = new MyChildClass();
+
+echo $inst->getFoo();
