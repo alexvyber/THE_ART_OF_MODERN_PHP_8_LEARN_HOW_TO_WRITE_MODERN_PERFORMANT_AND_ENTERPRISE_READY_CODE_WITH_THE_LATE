@@ -17,9 +17,7 @@ $dumper = new Dumper();
 try {
     throw new BarException('something went wrong');
 } catch (FooException | BarException $superCustomException) {
-    echo '
-This block is going to be executed, because we have caught one of the specific exception types we are catching
-';
+    echo 'This block is going to be executed, because we have caught one of the specific exception types we are catching';
     echo $dumper($superCustomException);
 } catch (Exception $exception) {
     echo 'This block will not be executed, because the exception has already been caught';
