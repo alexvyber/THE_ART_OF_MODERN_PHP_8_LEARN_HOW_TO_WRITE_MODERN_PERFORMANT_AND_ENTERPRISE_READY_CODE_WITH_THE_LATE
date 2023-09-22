@@ -6,7 +6,8 @@ namespace Book\Part1\Chapter1\Simple;
 
 class SimpleManualAssignment
 {
-    private string $name;
+    // private string $name;
+    public string $name;
 
     public function __construct(string $name = 'Simon')
     {
